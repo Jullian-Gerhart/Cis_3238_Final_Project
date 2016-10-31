@@ -1,0 +1,36 @@
+div.right_panel {
+    background-color: yellow;
+    width: 25%;
+    float: right;
+    margin-left: 600px;
+    
+}
+div.body {
+    background-color: #FFFFFF;
+    width: 75%;
+    float: left;
+    
+}
+ul.header {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li.header {
+    float: left;
+}
+
+li.header a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li.header a:hover {
+    background-color: #111111;
+}

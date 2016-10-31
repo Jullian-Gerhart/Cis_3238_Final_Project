@@ -1,0 +1,22 @@
+<?php require_once("src/header.php"); include 'function.php'; ?>
+<style>
+<?php include 'public_html/css/main.css'; ?>
+</style>
+
+<div class="body">
+    <div id="content">
+        Welcome to the college football algorithm!
+        <ul>
+        <?php 
+        if(isAdmin($_GET['user']) == 1){
+                echo "<li><a href='manage_accounts.php'>Manage Acounts</a>";
+        }
+        ?>
+            <li><a href="week_rb.php">Running backs by week</a></li>
+        </ul>
+    </div>
+    <?php //require_once("src/rightPanel.php"); ?>
+</div>
+<?php
+    //require_once("src/footer.php");
+?>
