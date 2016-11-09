@@ -6,6 +6,7 @@
 <div class="body">
     <div id="content">
         <?php 
+            //Read in GET data
             $week =  $_GET["week"];
             $game = $_GET["game"];
             $guy = $_GET["rb"];
@@ -13,7 +14,10 @@
             $lines = file("$pwd/week/$week/$game.txt");
             foreach ($lines as $line_num => $line){
                 list($rb, $score, $comments) = explode(';',$line);
-                if($rb = $guy){
+                
+                //Check to to see if the running back we selected is in the file
+                if($rb == $guy){
+                       //Once you find the running back your looking for, 
                        echo "<h1>$rb</h1>";
                        echo "<h2>$score</h2>";
                        $cs = explode('|', $comments);

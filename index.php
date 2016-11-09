@@ -1,7 +1,8 @@
-<?php require_once("src/header.php"); ?>
+
 <style>
 <?php include 'public_html/css/main.css'; ?>
 </style>
+<h3>Welcome to the college football running back algorithm!</h3><br>
 
 <div class="body">
     <div id="content">
@@ -11,6 +12,7 @@
         <input type="submit">
     </div>
     <?php 
+    //See if there are any errors
     if(!empty($_GET["status"])){ 
         if($_GET['status'] == 1){
             echo("Invalid username/password");

@@ -8,6 +8,7 @@
         Select a Game:
         <ul>
         <?php 
+            //Display the games for that week. Week is specified form GET data
             $week =  $_GET["week"];
             $pwd = getcwd();
             $lines = file("$pwd/week/$week.txt");

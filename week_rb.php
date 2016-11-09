@@ -8,6 +8,7 @@
         Select a Week:
         <ul>
         <?php 
+            //Populate the weeks based on week.txt
             $lines = file('weeks.txt');
             foreach ($lines as $line_num => $line){
                 list($week, $null) = explode(';', $line);

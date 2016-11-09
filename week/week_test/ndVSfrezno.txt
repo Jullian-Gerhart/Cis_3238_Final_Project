@@ -1,2 +1,0 @@
-RB:Jullian_Gerhart;100;null
-FB:Caroline_Erkes;50;null

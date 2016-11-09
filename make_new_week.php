@@ -10,6 +10,7 @@
         <input type="submit">
     </div>
     <?php 
+    //These are the erorr validiation codes
     if(!empty($_GET["status"])){ 
         if($_GET['status'] == 1){
             echo("Do not include white spaces");

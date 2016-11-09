@@ -1,6 +1,13 @@
-<?php require_once("src/header.php"); ?>
+
+<?php 
+    //Always include the header
+    require_once("src/header.php"); 
+?>
 <style>
-<?php include 'public_html/css/main.css'; ?>
+<?php 
+    //Always include CSS
+    include 'public_html/css/main.css';
+?>
 </style>
 
 <div class="body">
@@ -13,6 +20,7 @@
         <input type="submit">
     </div>
     <?php 
+    //Here we have the responces from the verify process. Return codes and there errors are clear
     if(!empty($_GET["status"])){ 
         if($_GET['status'] == 1){
             echo("Account already exists");
@@ -25,8 +33,5 @@
         }
     }
     ?>
-    <?php //require_once("src/rightPanel.php"); ?>
+    
 </div>  
-<?php
-    //require_once("src/footer.php");
-?>

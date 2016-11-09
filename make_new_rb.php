@@ -13,6 +13,8 @@
         </select>
         <br>
         <?php
+            //Make page specific to page data
+            //Set up lables
             $week = $_GET["week"];
             $game = $_GET["game"];
             list($team1, $team2) = explode("VS", $game);
@@ -23,6 +25,7 @@
         <input type="submit">
     </div>
     <?php 
+    //This is error display balues
     if(!empty($_GET["status"])){ 
         if($_GET['status'] == 1){
             echo("Do not include white spaces!");

@@ -1,4 +1,7 @@
 <?php
+//Function file
+
+//Given a user name to see if they are an dmin by opening the accounts file
  function isAdmin($username) {
      $lines = file('accounts.txt');
     foreach ($lines as $line_num => $line) {
