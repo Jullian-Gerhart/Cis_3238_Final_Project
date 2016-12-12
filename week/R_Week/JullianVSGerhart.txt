@@ -1,0 +1,2 @@
+RB:Test;100;nullC:\xampp\htdocs\CollegeFootball\week\R_Week\JullianVSGerhart\Test.txt
+FB:Carbon;100;nullC:\xampp\htdocs\CollegeFootball\week\R_Week\JullianVSGerhart\Carbon.txt

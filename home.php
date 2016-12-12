@@ -8,8 +8,20 @@
         Welcome to the college football algorithm!
         <ul>
         <?php 
-        if(isAdmin($_GET['user']) == 1){
-                echo "<li><a href='manage_accounts.php'>Manage Acounts</a>";
+        $username = "null";//Read in user 
+        if(!empty($_GET["user"])){
+            $username = $_GET["user"];
+        }else{
+            $lines = file("cookies.txt");
+            foreach ($lines as $line_num => $line){
+                list($tag, $value) = explode('|',$line);//If not read in the cookie to get user
+                if($tag == "USERNAME"){
+                    $username = $value;
+                }
+            }
+        }
+        if(isAdmin($username) == 1){
+                echo "<li><a href='manage_accounts.php'>Manage Acounts</a>"; //If admin display this
         }
         ?>
             <li><a href="week_rb.php">Running backs by week</a></li>

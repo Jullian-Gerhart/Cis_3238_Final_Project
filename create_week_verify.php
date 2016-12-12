@@ -5,7 +5,7 @@ $week =  $_POST["week"];
 
 //If there is a white space in the week name, return with error
 if ( preg_match('/\s/',$week)){
-       header("Location: make_new_week.php?status=1");
+       header("Location: make_new_week.php?status=1&week=$week");
        exit();
 }
 $lines = file('weeks.txt');
@@ -14,7 +14,7 @@ foreach ($lines as $line_num => $line){
     list($t_week, $null) = explode(';', $line);
     //If the name of the 
     if($t_week == $week){
-        header("Location: make_new_week.php?status=2");
+        header("Location: make_new_week.php?status=2&week=$week");
         exit();
     }
         

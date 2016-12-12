@@ -17,10 +17,10 @@
     <?php 
     if(!empty($_GET["status"])){ 
         if($_GET['status'] == 1){
-            echo("Do not include white spaces!");
+            echo("Do not include white spaces!"); // Retunr status for different errors
         }
         if($_GET['status'] == 2){
-            echo("Game name must be unique");
+            echo("Game name must be unique"); //Return status for different errors
         }
     }
     ?>

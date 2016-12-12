@@ -9,11 +9,11 @@ $gameFINAL = $opp1."VS".$opp2;
 
 //If there is a whitespace in either opponent's form post flag an error
 if ( preg_match('/\s/',$opp2)){
-       header("Location: make_new_game.php?status=1");
+       header("Location: make_new_game.php?status=1&week=$week");
        exit();
 }
 if ( preg_match('/\s/',$opp1)){
-       header("Location: make_new_game.php?status=1");
+       header("Location: make_new_game.php?status=1&week=$week");
        exit();
 }
 

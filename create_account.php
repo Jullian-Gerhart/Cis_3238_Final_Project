@@ -23,7 +23,7 @@
     //Here we have the responces from the verify process. Return codes and there errors are clear
     if(!empty($_GET["status"])){ 
         if($_GET['status'] == 1){
-            echo("Account already exists");
+            echo("Account already exists");//Pass back errors
         } 
         if($_GET['status'] == 2){
             echo("Passwords don't match");
